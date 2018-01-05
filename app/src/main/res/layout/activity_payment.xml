@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorSecond"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/title_debt"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size16"
+        android:text="Tổng nợ:"/>
+
+    <TextView
+        android:id="@+id/txt_debt"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/title_date"
+        android:layout_alignTop="@+id/title_debt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size17"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        android:text=""/>
+
+
+    <TextView
+        android:id="@+id/title_date"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/title_debt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/size16"
+        android:text="Ngày nộp tiền: "/>
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/title_date"
+        android:layout_alignTop="@+id/title_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size17"
+        android:textStyle="bold"
+        android:text=""/>
+
+
+
+    <TextView
+        android:id="@+id/title_had_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tiền nộp:"
+        android:layout_below="@+id/title_date"
+        android:layout_alignLeft="@+id/title_date"
+        android:layout_marginTop="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/size16"/>
+
+
+    <EditText
+        android:id="@+id/edit_had_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title_note"
+        android:layout_alignEnd="@+id/txt_date"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/title_date"
+        android:background="@drawable/cus_edit_text_add_red"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/size17"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú:"
+        android:layout_below="@+id/title_had_pay"
+        android:layout_alignLeft="@+id/title_had_pay"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/size16"/>
+
+    <EditText
+        android:id="@+id/txt_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title_note"
+        android:layout_toEndOf="@+id/title_date"
+        android:background="@drawable/cus_edit_text_add"
+        android:gravity="top"
+        android:minHeight="100dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textSize="@dimen/size17"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_edit_text_add_red"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txt_note"
+        android:layout_alignLeft="@+id/txt_note"
+        android:gravity="center"
+        android:minHeight="200dp"
+        android:layout_alignRight="@+id/txt_note">
+        <ImageView
+            android:id="@+id/img_noImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_no_image_200"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/img_bill"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_no_image_200"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/title_note"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_check"
+        android:tint="@android:color/white" />
+
+</RelativeLayout>

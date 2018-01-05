@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size17"
+        android:textStyle="bold"
+        android:text="10/10/2017"
+        android:textColor="@color/tb_primary_dark_color"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="match_parent"
+        android:background="@color/tb_primary_color"/>
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_total"/>
+
+    <TextView
+        android:id="@+id/txtTotalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size17"
+        android:textStyle="bold"
+        android:text="2,000,000"
+        android:textColor="@color/price_color_red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size17"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:text="VND"
+        android:textColor="@color/price_color_red"/>
+
+</LinearLayout>

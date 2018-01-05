@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorSecond</item>
+        <item name="colorPrimaryDark">@color/colorRed</item>
+        <item name="colorAccent">@color/colorSecond</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base"></style>
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/tb_primary_color</item>
+        <item name="colorPrimaryDark">@color/tb_primary_dark_color</item>
+        <item name="colorAccent">@color/tb_accent_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NSHSpinnerStyle">
+        <item name="android:background">@drawable/cus_spinner_background</item>
+        <item name="android:minHeight">@dimen/cus_spinner_height</item>
+    </style>
+    <style name="NSHSpinnerStyle_underline">
+        <item name="android:background">@drawable/cus_spinner_background_underline</item>
+        <item name="android:minHeight">@dimen/cus_spinner_height</item>
+    </style>
+
+</resources>

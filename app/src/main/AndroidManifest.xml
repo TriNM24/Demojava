@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fpt.isc.nshreport">
+
+    <!-- Declare Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- Main Application -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_nsh_petro"
+        tools:replace="android:icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_nsh_petro"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="faba11ad774c19807780869ddc4ee19f75cb7f50"
+            />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="fpt.isc.nshreport.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+        <service android:name=".services.FirebaseInstance">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.FirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- Main Activity -->
+        <activity
+            android:name=".activities.FirstActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Application Activities -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+            activity android:name=".activities.SalesReportActivity"
+            android:screenOrientation="portrait"/
+        -->
+        <activity
+            android:name=".activities.SalesReportDetailActivity"
+            android:label="@string/sales_report_detail_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SalesReportAddActivity"
+            android:label="@string/sales_report_add_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.ShiftAddActivity"
+            android:label="@string/shift_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.ShiftDetailActivity"
+            android:label="@string/shift_detail_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+
+        <activity
+            android:name=".activities.ShiftCloseActivity"
+            android:label="@string/shift_close_title"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateVisible|stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PhotosListActivity"
+            android:label="@string/report_photos_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".activities.SalesReportUpdateActivity"
+            android:label="@string/sales_report_update_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.GasPumpManageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ImportDetailActivity"
+            android:label="@string/import_detail_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden"/>
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:label="Phiếu nộp tiền"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

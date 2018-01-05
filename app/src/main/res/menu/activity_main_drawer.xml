@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/navigation_title_home" />
+        <item
+            android:id="@+id/nav_shift"
+            android:checkable="false"
+            android:icon="@drawable/ic_open"
+            android:title="@string/navigation_title_shift" />
+
+        <item
+            android:id="@+id/nav_salesreport"
+            android:icon="@drawable/ic_report"
+            android:title="@string/navigation_title_sales_report" />
+        <item
+            android:id="@+id/nav_gaspumpmanage"
+            android:icon="@drawable/ic_gas_pump"
+            android:title="@string/navigation_title_gas_pump_manage" />
+        <item
+            android:id="@+id/nav_price"
+            android:icon="@drawable/ic_price"
+            android:title="@string/navigation_title_price" />
+        <item
+            android:id="@+id/nav_import"
+            android:icon="@drawable/ic_import"
+            android:title="@string/navigation_title_import" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/ic_inventory"
+            android:title="@string/navigation_title_inventory" />
+        <item
+            android:id="@+id/nav_payment"
+            android:checkable="false"
+            android:icon="@drawable/ic_money_payment"
+            android:title="@string/navigation_title_payment" />
+        <item
+            android:id="@+id/nav_paymentHis"
+            android:icon="@drawable/ic_money_payment_his"
+            android:title="@string/navigation_title_paymentHis" />
+
+    </group>
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_app_info"
+            android:checkable="false"
+            android:icon="@drawable/ic_info"
+            android:title="@string/navigation_title_info" />
+
+        <item
+            android:id="@+id/nav_app_log_out"
+            android:icon="@drawable/ic_log_out"
+            android:checkable="false"
+            android:title="@string/navigation_title_log_out" />
+    </group>
+
+
+</menu>

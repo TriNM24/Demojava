@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorSecond">#fc9c1f</color>
+    <color name="colorTop">#E28C1B</color>
+    <color name="colorSecond2">#fcb962</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorOrange">#FF9900</color>
+    <color name="colorWarning">#ffcc00</color>
+    <color name="colorOrangeWhite">#fce9d9</color>
+    <color name="colorGreen">#009900</color>
+    <color name="colorBlue">#000099</color>
+    <color name="colorBlue2">#1919FF</color>
+
+
+    <color name="debt_time">#b2b2b2</color>
+    <color name="debt_approved">#5574bf</color>
+
+
+    <color name="tb_primary_color">#ff212121</color>
+    <color name="tb_primary_dark_color">#ff000000</color>
+    <color name="tb_accent_color">#ff6496ff</color>
+
+    <color name ="background_window">#00796b</color>
+    <color name ="background_actionbar">#009788</color>
+    <color name ="title_notify">#009786</color>
+    <color name ="background_price">#EFFAF5</color>
+    <color name ="price_color">#069050</color>
+    <color name ="price_color_blue">#0C9AF5</color>
+    <color name ="price_color_red">#e91144</color>
+
+    <color name ="background_notify">#1e2d3e</color>
+
+</resources>

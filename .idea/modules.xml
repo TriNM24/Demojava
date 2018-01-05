@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NSHReport.iml" filepath="$PROJECT_DIR$/NSHReport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cirleCheckbox/cirleCheckbox.iml" filepath="$PROJECT_DIR$/cirleCheckbox/cirleCheckbox.iml" />
+      <module fileurl="file://E:\NSH_Project\android_nsh\NSHReport\cirleCheckbox\cirleCheckbox.iml" filepath="E:\NSH_Project\android_nsh\NSHReport\cirleCheckbox\cirleCheckbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet-message/sweet-message.iml" filepath="$PROJECT_DIR$/sweet-message/sweet-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waveloadingview_library-0.3.5/waveloadingview_library-0.3.5.iml" filepath="$PROJECT_DIR$/waveloadingview_library-0.3.5/waveloadingview_library-0.3.5.iml" />
+    </modules>
+  </component>
+</project>

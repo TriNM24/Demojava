@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--chi tiết-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_border"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <!--dong 1-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="A95"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txt_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cus_border_price_blue"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="10dp"
+                    android:text="16,895"
+                    android:minWidth="100dp"
+                    android:textColor="@color/price_color_blue"
+                    android:textSize="14dp" />
+                <!--<EditText
+                    android:id="@+id/txt_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cus_border_price_blue"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:inputType="numberDecimal"
+                    android:minWidth="100dp"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/price_color_blue"
+                    android:textSize="14dp" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--dong 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txt_title_detail"
+                android:layout_width="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center_horizontal"
+                android:text="Bồn A95 001"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_marginTop="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="50"
+                android:gravity="center_horizontal"
+                android:text="$ 110.000"
+                android:textColor="@color/colorRed"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--dong 3-->
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn vị tính : "
+                android:textColor="@android:color/tertiary_text_dark"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lít"
+                android:textColor="@android:color/tertiary_text_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--hình ảnh-->
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/cus_border_white"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nsh_logo"
+            app:riv_corner_radius="20dip"
+            app:riv_mutate_background="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

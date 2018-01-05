@@ -1,0 +1,92 @@
+<resources>
+    <!-- Application -->
+    <string name="app_name">NSH Report</string>
+    <!--general-->
+    <string name="no_data">Không có dữ liệu</string>
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_title_home">Trang chủ</string>
+    <string name="navigation_title_sales_report">Báo cáo bán hàng</string>
+    <string name="navigation_title_gas_pump_manage">Quản lý trụ bơm</string>
+    <string name="navigation_title_price">Bảng giá</string>
+    <string name="navigation_title_tank">Trụ bơm</string>
+    <string name="navigation_title_import">Nhập hàng</string>
+    <string name="navigation_title_shift">Mở ca</string>
+    <string name="navigation_title_inventory">Tồn kho</string>
+    <string name="navigation_title_payment">Phiếu nộp tiền</string>
+    <string name="navigation_title_paymentHis">Lịch sử nộp tiền</string>
+    <string name="navigation_title_info">Thông tin ứng dụng</string>
+    <string name="navigation_title_log_out">Đăng xuất</string>
+    <!-- Setting -->
+    <string name="action_log_out">Đăng xuất</string>
+    <!-- Home activity -->
+    <string name="activity_title_home">Trang chủ</string>
+    <string name="activity_title_sales_report">Báo cáo bán hàng</string>
+    <string name="activity_title_gas_pump_manage">Quản lý trụ bơm</string>
+    <string name="activity_title_news">Tin tức</string>
+    <string name="activity_title_price">Bảng giá</string>
+    <string name="activity_title_tank">Trụ bơm</string>
+    <string name="activity_title_app_info">Thông tin ứng dụng</string>
+    <string name="activity_title_inventory">Tồn kho</string>
+    <!-- Login activity -->
+    <string name="hint_login_username">Tên đăng nhập</string>
+    <string name="hint_login_pass">Mật khẩu</string>
+    <string name="login_remember">Ghi nhớ đăng nhập</string>
+    <string name="login_button">Đăng nhập</string>
+    <string name="login_other">Đăng nhập bằng tài khoản khác</string>
+    <string name="login_imei_info">Thông tin kích hoạt thiết bị</string>
+    <!-- Sales report activity -->
+    <string name="sales_report_order">SẮP XẾP:</string>
+    <string name="sales_report_total">Tổng:</string>
+    <string name="sales_report_add">Thêm mới</string>
+
+    <string name="activity_title_debt_report">Lịch sử nộp tiền</string>
+
+    <string-array name="sales_report_data_spinner">
+        <item>Ngày bán</item>
+        <item>Số lít bán</item>
+    </string-array>
+    <!-- Sales report detail activity -->
+    <string name="sales_report_detail_title">Báo cáo chi tiết</string>
+    <string name="sales_report_detail_update">Cập nhật</string>
+    <string name="sales_report_detail_sales_date">Ngày bán:</string>
+    <string name="sales_report_detail_checked_man">Người duyệt:</string>
+    <string name="sales_report_detail_sales_status">Trạng thái:</string>
+    <string name="sales_report_detail_note">Ghi chú:</string>
+    <string name="sales_report_detail_report_litre">Số báo cáo:</string>
+    <string name="sales_report_detail_checked_litre">Số duyệt:</string>
+    <!-- Sales report add activity -->
+    <string name="sales_report_add_title">Tạo báo cáo</string>
+    <string name="sales_report_add_report_date">Ngày báo cáo:</string>
+    <!--Shift add activity-->
+    <string name="shift_add_data">Ngày:</string>
+    <string name="shift_add_shift">Ca:</string>
+    <string name="shift_add_staff">Nhân viên:</string>
+    <string name="shift_title">Mở ca</string>
+    <string name="shift_detail_title">Chi tiết ca</string>
+    <string name="import_detail_title">Chi tiết phiếu nhập</string>
+    <string name="shift_update_title">Cập nhật ca</string>
+    <string name="payment">Phiếu nộp tiền</string>
+    <string name="shift_close_title">Đóng ca</string>
+
+    <!-- Report photos activity -->
+    <string name="report_photos_title">Danh sách hình ảnh</string>
+    <string name="report_photos_cancel">Thoát</string>
+    <!-- Sales report update activity -->
+    <string name="sales_report_update_title">Cập nhật báo cáo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Gas pump manage activity -->
+    <string name="gas_manage_pump_total">Tổng trụ:</string>
+    <string name="gas_manage_pump_line_total">Tổng vòi:</string>
+    <string name="gas_manage_item_status">Tình trạng:</string>
+    <string name="gas_manage_item_pump_line">Số lượng vòi:</string>
+    <!-- Gas pump manage detail activity -->
+    <string name="gas_pump_manage_detail_code">Ký hiệu:</string>
+    <string name="gas_pump_manage_detail_date">Ngày lắp trụ:</string>
+    <string name="gas_pump_manage_detail_line_name">Tên vòi</string>
+    <string name="gas_pump_manage_detail_line_status">Tình trạng</string>
+
+</resources>

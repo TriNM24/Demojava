@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    signingConfigs {
+        config_release {
+            keyAlias 'nshKey'
+            keyPassword '123456'
+            storeFile file('D:/Android_NSH/NSHReport/keyBuild.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "fpt.isc.nshreport"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "2"
+        it.buildConfigField 'String', 'RELEASE_DATE', "\"2017-07-20\""
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config_release
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Retrofit
+    // JSON Parsing
+    //RxAndroid
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    /*compile 'com.android.support:multidex:1.0.1'*/
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    testCompile 'junit:junit:4.12'
+    //compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //compile 'me.itangqi.waveloadingview:library:0.3.5'
+    compile files('libs/eventbus-3.0.0.jar')
+    compile project(':waveloadingview_library-0.3.5')
+    //lib to using sweet-message
+    compile 'com.pnikosis:materialish-progress:1.0'
+    implementation project(':sweet-message')
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'me.leolin:ShortcutBadger:1.1.13@aar'
+    compile 'com.diogobernardino:williamchart:2.5.0'
+    implementation project(':cirleCheckbox')
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true;
+    }
+}
+
+
+apply plugin: 'com.google.gms.google-services'
