@@ -11,8 +11,7 @@ android {
             keyAlias 'nshKey'
             keyPassword '123456'
             storeFile file('D:/Android_NSH/NSHReport/keyBuild.jks')
-            storePassword '123456'
-		
+            storePassword '123456'		
         }
     }
     compileSdkVersion 25
